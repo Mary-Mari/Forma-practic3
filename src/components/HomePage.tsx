@@ -26,6 +26,8 @@ const HomePage: React.FC = () => {
 
     return (
         <div>
+
+            
             {!isRegistering && <Button onClick={() => setIsRegistering(true)}>Регистрация</Button>}
             {isRegistering && (
                 <form onSubmit={handleSubmit(onSubmit)}>
